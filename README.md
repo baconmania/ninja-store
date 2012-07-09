@@ -3,6 +3,15 @@ ninja-store
 
 express Tutorial from hacksparrow.com
 
+### Additional Features
+
+Tests using [Mocha](http://visionmedia.github.com/mocha/)
+
+    $ cd test
+    $ sudo npm install -g mocha
+    $ npm install should
+    $ mocha
+
 ### References
 
 * [express Tutorial](http://www.hacksparrow.com/express-js-tutorial.html)
