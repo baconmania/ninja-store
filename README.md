@@ -1,7 +1,7 @@
 ninja-store
 ===========
 
-express Tutorial from hacksparrow.com
+express Tutorial from [hacksparrow.com](http://www.hacksparrow.com/express-js-tutorial.html)
 
 ### Additional Features
 
