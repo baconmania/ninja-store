@@ -1,9 +1,6 @@
 var should = require('should');
 var routes = require('../routes/store');
 
-var req = {
-  session: {username: "sooo"}
-};
 var res = {
   viewName: "",
   data: {},
@@ -18,7 +15,17 @@ var res = {
 
 describe("Routing", function(){
   describe("home", function(){
+    it("should provide the view name 'home' if username is missing", function(){
+      var req = {
+        session: {username: undefined}
+      };
+      routes.home(req, res);
+      res.viewName.should.equal('home');
+    });
     it("should provide the view name '/items' if username exists", function(){
+      var req = {
+        session: {username: "sooo"}
+      };
       routes.home(req, res);
       res.viewName.should.equal('/items');
     });
